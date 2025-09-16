@@ -41,6 +41,38 @@ input[type="radio"] {
     margin: 0 auto;
 }
 
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+    width: 63px;
+    height: 194px;
+    box-shadow: -2px 0 3px #eee;
+    background-color: white;
+    border-radius: 4px 0 0 4px;
+}
+
+.panel__item {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel__item img {
+    transition: all .3s ease;
+}
+
+.panel__item:hover img {
+    scale: 1.2;
+}
+
 .header {
     width: 100%;
     height: 40px;
